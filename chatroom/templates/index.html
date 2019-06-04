@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <title>Name</title>
+    </head>
+    <body>
+        <div>First One: <span id="foname">{{ name }}</span></div>
+        <hr>
+        <input id="name" autocomplete="off" autofocus placeholder="Name" type="text">
+        <button id="sub">Submit</button>
+    </body>
+</html>
+

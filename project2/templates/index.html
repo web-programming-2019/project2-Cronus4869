@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <title>Chatroom</title>
+    </head>
+    <body>
+        <h1>What's Up</h1>
+        <ul id="chat">
+        </ul>
+        <hr>
+        <input id ="name" autocomplete="off" autofocus placeholder="Name" type="text">
+        <button id="sub">Submit</button>
+        <input id ="content" autocomplete="off" autofocus placeholder="Content" type="text">
+        <button id="consub">Submit</button>
+        <button id="newroom">Build New Chatroom</button>
+        <ul id="room">
+            <li><a href ="http://127.0.0.1:5000/" target="_blank">room 0</a></li>
+        </ul>
+    </body>
+</html>
+
+
